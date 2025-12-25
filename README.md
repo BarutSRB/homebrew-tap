@@ -1,44 +1,29 @@
-# HyprSpace Homebrew Tap
+# OmniWM Homebrew Tap
 
-Official Homebrew tap for [HyprSpace](https://github.com/BarutSRB/HyprSpace) - a heavily enhanced fork of AeroSpace with centered workspace bar and dwindle layout.
+Official Homebrew tap for [OmniWM](https://github.com/BarutSRB/OmniWM) - a tiling window manager for macOS with a Niri-inspired column-based layout.
 
 ## Installation
 
-### Stable Version
-
 ```bash
 brew tap BarutSRB/tap
-brew install hyprspace
-```
-
-### Development Version
-
-```bash
-brew tap BarutSRB/tap
-brew install hyprspace-dev
+brew install omniwm
 ```
 
 ## Features
 
-- 🎯 **Centered Workspace Bar** - macOS menu bar integration with workspace indicators and window icons
-- 🌀 **Dwindle Layout** - Hyprland-inspired binary tree tiling
-- 🎠 **Niri Layout** - Carousel-style layout with centered focus
-- 🚀 **All AeroSpace features** - Full i3-like window management for macOS
-
-## Coexistence with AeroSpace
-
-HyprSpace uses separate namespaces and can be installed alongside AeroSpace:
-- **App name**: `HyprSpace.app` (vs `AeroSpace.app`)
-- **CLI binary**: `hyprspace` (vs `aerospace`)
-- **Config**: `~/.hyprspace.toml` (vs `~/.aerospace.toml`)
-- **Bundle ID**: `com.barut.hyprspace` (vs `bobko.aerospace`)
+- **Column-based tiling** - Windows arranged in scrollable columns
+- **Multi-monitor support** - Seamless workspace management across displays
+- **Virtual workspaces** - Organize windows into separate workspaces
+- **Extensive hotkeys** - 40+ keyboard shortcuts for window control
+- **Focus borders** - Visual indicators for the active window
+- **Workspace bar** - Optional visual workspace indicator
+- **Menu bar app** - Lightweight, runs in the background
 
 ## Links
 
-- **Main Repository**: https://github.com/BarutSRB/HyprSpace
-- **Releases**: https://github.com/BarutSRB/HyprSpace/releases
-- **Upstream AeroSpace**: https://github.com/nikitabobko/AeroSpace
+- **Repository**: https://github.com/BarutSRB/OmniWM
+- **Releases**: https://github.com/BarutSRB/OmniWM/releases
 
 ## Requirements
 
-- macOS 13.0+ (Ventura)
+- macOS 15.0+ (Sequoia)
