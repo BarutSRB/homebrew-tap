@@ -1,6 +1,6 @@
 cask "omniwm" do
-  version "0.2.7.2"
-  sha256 "70ff8cc4c1317439014e5b885b08b661b93f093c2a3812183156095646c66611"
+  version "0.2.7.3"
+  sha256 "f44a1a769230dcc73c7e13be7b62f8366270ac973dc49fdd589400e826400a9d"
 
   url "https://github.com/BarutSRB/OmniWM/releases/download/v#{version}/OmniWM-v#{version}.zip"
   name "OmniWM"
