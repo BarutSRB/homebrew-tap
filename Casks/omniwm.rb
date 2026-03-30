@@ -1,6 +1,6 @@
 cask "omniwm" do
-  version "0.4.4"
-  sha256 "053e464cffab8e3c3a92ae2d220fd6b1d3415300e581837b27ec5041a1815191"
+  version "0.4.5"
+  sha256 "26f8398a840c31ae90ad036983779561053e3194025db3e110c9ff7f0f9f6b5f"
 
   url "https://github.com/BarutSRB/OmniWM/releases/download/v#{version}/OmniWM-v#{version}.zip"
   name "OmniWM"
@@ -10,4 +10,5 @@ cask "omniwm" do
   depends_on macos: ">= :sequoia"
 
   app "OmniWM.app"
+  binary "#{appdir}/OmniWM.app/Contents/MacOS/omniwmctl", target: "omniwmctl"
 end
