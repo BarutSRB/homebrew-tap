@@ -7,7 +7,8 @@ cask "omniwm" do
   desc "Tiling window manager for macOS with Niri-inspired column-based layout"
   homepage "https://github.com/BarutSRB/Hiro"
 
-  depends_on macos: :sequoia
+  depends_on macos: :tahoe
+  depends_on arch: :arm64
 
   app "OmniWM.app"
   binary "#{appdir}/OmniWM.app/Contents/MacOS/omniwmctl", target: "omniwmctl"
