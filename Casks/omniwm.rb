@@ -1,11 +1,11 @@
 cask "omniwm" do
-  version "0.5.6"
-  sha256 "1a3365d625c21238c6314d7b17757725efdcddf4e2c23147c09cf3249703a3a5"
+  version "0.5.7"
+  sha256 "20a911c6476eb3349f54bdd9c031085c4d704ef5bf9f0d7896fc8d53da505edc"
 
-  url "https://github.com/BarutSRB/Hiro/releases/download/v#{version}/OmniWM-v#{version}.zip"
+  url "https://github.com/BarutSRB/OmniWM/releases/download/v#{version}/OmniWM-v#{version}.zip"
   name "OmniWM"
   desc "Tiling window manager for macOS with Niri-inspired column-based layout"
-  homepage "https://github.com/BarutSRB/Hiro"
+  homepage "https://github.com/BarutSRB/OmniWM"
 
   depends_on macos: :tahoe
   depends_on arch: :arm64
