@@ -4,7 +4,7 @@ cask "omniwm" do
 
   url "https://github.com/BarutSRB/OmniWM/releases/download/v#{version}/OmniWM-v#{version}.zip"
   name "OmniWM"
-  desc "Tiling window manager for macOS with Niri-inspired column-based layout"
+  desc "Niri- and Hyprland-style tiling window manager"
   homepage "https://omniwm.app/"
 
   depends_on macos: :tahoe
