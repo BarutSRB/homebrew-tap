@@ -1,32 +1,30 @@
-# OmniWM Homebrew Tap
+# OmniWM Homebrew Tap (retired)
 
-Official Homebrew tap for [OmniWM](https://omniwm.app) — a free, open-source, signed and notarized tiling window manager for Apple Silicon Macs. OmniWM combines Niri-style orientation-aware scrolling containers and Hyprland-style Dwindle BSP layouts, selectable per workspace.
+This tap is retired. [OmniWM](https://omniwm.app) is in Homebrew's official cask repository, and **0.6.7 was the last release published here**. Every release from 0.6.8 on ships only as the official `omniwm` cask.
 
-## Installation
+## Install
 
 ```bash
-brew tap BarutSRB/tap
-brew install omniwm
+brew install --cask omniwm
 ```
 
-## Features
+## Migrate an existing tap install
 
-- **Two layout engines** — Niri-style orientation-aware scrolling containers and Hyprland-style Dwindle BSP
-- **Per-workspace layouts** — Choose the layout that fits each workspace
-- **Multi-monitor routing** — Route focus, windows, and workspaces across a real-desk display map
-- **Keyboard, mouse, and trackpad control** — Customizable hotkeys, gestures, sizing, and navigation
-- **Optional local automation** — Enable IPC to script commands, queries, rules, and events with `omniwmctl` and JSON IPC
-- **Integrated workflow tools** — Overview, command palette, workspace bar, scratchpads, and quake terminal
+If you installed OmniWM from this tap, quit OmniWM and run these commands in this order:
+
+```bash
+brew update
+brew upgrade omniwm
+brew untap BarutSRB/tap
+```
+
+`brew update` has to come first: it fetches this tap's redirect to the official cask and moves your install over. Untapping before that would offer to uninstall OmniWM. `brew reinstall --cask homebrew/cask/omniwm` is optional and only switches the install record to the official cask right away.
 
 ## Links
 
-- **Website and documentation**: https://omniwm.app
-- **Repository**: https://github.com/BarutSRB/OmniWM
-- **Releases**: https://github.com/BarutSRB/OmniWM/releases
+- Website and documentation: https://omniwm.app
+- Installation guide: https://omniwm.app/guides/install/
+- Repository: https://github.com/BarutSRB/OmniWM
+- Releases: https://github.com/BarutSRB/OmniWM/releases
 
-## Requirements
-
-- Apple Silicon
-- macOS 26 Tahoe or later
-- Accessibility and Input Monitoring permissions
-- `Displays have separate Spaces` enabled
+This repository stays online so that `brew tap BarutSRB/tap` and existing tap installs keep redirecting to the official cask through `tap_migrations.json`.
